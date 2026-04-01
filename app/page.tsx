@@ -55,14 +55,16 @@ export default function Home() {
           </div>
 
           <div className="hero-visual" aria-hidden="true">
-            <div className="court-card">
-              <div className="court-lines" />
-              <div className="impact-ring impact-ring-one" />
-              <div className="impact-ring impact-ring-two" />
-              <div className="ball ball-one" />
-              <div className="ball ball-two" />
-              <div className="tip-chip tip-chip-top">Meet the ball in front</div>
-              <div className="tip-chip tip-chip-bottom">Finish balanced</div>
+            <div className="hero-photo-card">
+              <img
+                alt="Novak Djokovic hitting a forehand at contact"
+                className="hero-photo"
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Novak%20Djokovic%20%2825702159281%29.jpg"
+              />
+              <div className="hero-photo-overlay" />
+              <div className="tip-chip tip-chip-top">Explosive contact point</div>
+              <div className="tip-chip tip-chip-bottom">The kind of image that says tennis immediately</div>
+              <p className="hero-credit">Hero image via Wikimedia Commons, CC BY-SA</p>
             </div>
           </div>
         </section>
