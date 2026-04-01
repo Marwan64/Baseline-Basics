@@ -1,5 +1,6 @@
 import { CoachPanel, PracticeTools, QuizSection } from "./components";
 import { diagramAssets, strokeCards, videoLessons } from "./data";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -7,41 +8,14 @@ export default function Home() {
       <header className="topbar">
         <a className="brand" href="#top">
           <span className="brand-mark" aria-hidden="true">
-            <svg className="brand-logo" viewBox="0 0 64 64">
-              <defs>
-                <linearGradient id="brandGlow" x1="0%" x2="100%" y1="0%" y2="100%">
-                  <stop offset="0%" stopColor="#f3d36a" />
-                  <stop offset="55%" stopColor="#ff8b61" />
-                  <stop offset="100%" stopColor="#7ce4bf" />
-                </linearGradient>
-              </defs>
-              <rect
-                fill="rgba(8, 16, 24, 0.94)"
-                height="54"
-                rx="18"
-                stroke="url(#brandGlow)"
-                strokeWidth="2.5"
-                width="54"
-                x="5"
-                y="5"
-              />
-              <circle cx="23" cy="22" fill="#f3d36a" r="9" />
-              <path
-                d="M16 22c2.4-2.8 5-4.4 8.6-5.4M18.5 27c2.8-1.8 5.4-2.4 8.4-2.7"
-                fill="none"
-                stroke="#081018"
-                strokeLinecap="round"
-                strokeWidth="1.7"
-              />
-              <path
-                d="M36 18v28M36 18c8 3 12 7.5 14 13.6M36 46c7-2.2 11.6-5.8 14-11.8"
-                fill="none"
-                stroke="url(#brandGlow)"
-                strokeLinecap="round"
-                strokeWidth="3.4"
-              />
-              <circle cx="36" cy="18" fill="#f4efe2" r="2.4" />
-            </svg>
+            <Image
+              alt=""
+              className="brand-logo"
+              height={88}
+              priority
+              src="/logo.png"
+              width={88}
+            />
           </span>
           <span>Baseline Basics</span>
         </a>
