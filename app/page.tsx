@@ -147,6 +147,36 @@ export default function Home() {
           ))}
         </section>
 
+        <section className="section-header" id="diagrams">
+          <p className="eyebrow">Stroke References</p>
+          <h2>Study the four basic strokes with real photo references.</h2>
+          <p>
+            This section now stays focused on the essentials only: forehand, backhand, serve, and volley.
+            Each image is there to help you study body shape, contact position, and finish.
+          </p>
+        </section>
+
+        <section className="reference-grid">
+          {diagramAssets.map((asset) => (
+            <article className="panel reference-card" key={asset.title}>
+              <div className="reference-image-wrap">
+                <img
+                  alt={asset.title}
+                  className="reference-image"
+                  loading="lazy"
+                  src={asset.imageUrl}
+                />
+              </div>
+              <h3>{asset.title}</h3>
+              <p>{asset.note}</p>
+              <p className="reference-credit">{asset.credit}</p>
+              <a className="reference-link" href={asset.sourceUrl} rel="noreferrer" target="_blank">
+                View source on {asset.sourceLabel}
+              </a>
+            </article>
+          ))}
+        </section>
+
         <section className="section-header" id="coach">
           <p className="eyebrow">Coach Mode</p>
           <h2>Pick a stroke and get a quick lesson you can use on court today.</h2>
@@ -176,36 +206,6 @@ export default function Home() {
               </div>
               <h3>{lesson.title}</h3>
               <p>{lesson.note}</p>
-            </article>
-          ))}
-        </section>
-
-        <section className="section-header" id="diagrams">
-          <p className="eyebrow">Stroke References</p>
-          <h2>Study the four basic strokes with real photo references.</h2>
-          <p>
-            This section now stays focused on the essentials only: forehand, backhand, serve, and volley.
-            Each image is there to help you study body shape, contact position, and finish.
-          </p>
-        </section>
-
-        <section className="reference-grid">
-          {diagramAssets.map((asset) => (
-            <article className="panel reference-card" key={asset.title}>
-              <div className="reference-image-wrap">
-                <img
-                  alt={asset.title}
-                  className="reference-image"
-                  loading="lazy"
-                  src={asset.imageUrl}
-                />
-              </div>
-              <h3>{asset.title}</h3>
-              <p>{asset.note}</p>
-              <p className="reference-credit">{asset.credit}</p>
-              <a className="reference-link" href={asset.sourceUrl} rel="noreferrer" target="_blank">
-                View source on {asset.sourceLabel}
-              </a>
             </article>
           ))}
         </section>
