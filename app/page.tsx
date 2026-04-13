@@ -73,7 +73,7 @@ export default function Home() {
               />
               <div className="hero-photo-overlay" />
               <div className="tip-chip tip-chip-top">Explosive contact point</div>
-              <div className="tip-chip tip-chip-bottom">The kind of image that says tennis immediately</div>
+              {/* <div className="tip-chip tip-chip-bottom">The kind of image that says tennis immediately</div> */}
               <p className="hero-credit">Hero image via Wikimedia Commons, CC BY-SA</p>
             </div>
           </div>
