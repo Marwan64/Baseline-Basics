@@ -101,17 +101,21 @@ export function PracticeTools() {
           </label>
         </div>
 
-        <select
-          className="practice-select"
-          id="practice-focus"
-          onChange={(event) => setPlanKey(event.target.value as keyof typeof practicePlans)}
-          value={planKey}
-        >
-          <option value="contact">Clean contact</option>
-          <option value="timing">Timing and spacing</option>
-          <option value="serve">Serve consistency</option>
-          <option value="net">Net confidence</option>
-        </select>
+        <div className="practice-select-wrap">
+          <span className="select-helper">Choose your practice focus</span>
+          <select
+            className="practice-select"
+            id="practice-focus"
+            onChange={(event) => setPlanKey(event.target.value as keyof typeof practicePlans)}
+            value={planKey}
+          >
+            <option value="contact">Clean contact</option>
+            <option value="timing">Timing and spacing</option>
+            <option value="serve">Serve consistency</option>
+            <option value="net">Net confidence</option>
+          </select>
+          <span className="select-chevron" aria-hidden="true">⌄</span>
+        </div>
 
         <div className="practice-card">
           <p className="mini-label">Suggested session</p>
