@@ -5,42 +5,46 @@ import Image from "next/image";
 const sources = {
   start: [
     {
-      label: "LTA beginner tennis tips",
-      href: "https://www.lta.org.uk/play/how-to-get-started/",
+      label: "Britannica tennis rules",
+      href: "https://www.britannica.com/sports/tennis/Principles-of-play",
     },
     {
-      label: "ITF Tennis Play and Stay",
-      href: "https://www.itftennis.com/en/growing-the-game/itf-tennis-play-and-stay/",
+      label: "Tennis Canada shot playbook",
+      href: "https://www.tenniscanada.com/play/tennis-101/tennis-shot-playbook",
     },
   ],
   strokes: [
     {
-      label: "USTA Tennis 101: Forehand",
-      href: "https://www.usta.com/en/home/improve/tips-and-instruction/national/learning-the-basics--forehand.html",
+      label: "Tennis Canada shot playbook",
+      href: "https://www.tenniscanada.com/play/tennis-101/tennis-shot-playbook",
     },
     {
-      label: "USTA Tennis 101: Backhand",
-      href: "https://www.usta.com/en/home/improve/tips-and-instruction/national/learning-the-basics--backhand.html",
+      label: "Britannica tennis technique",
+      href: "https://www.britannica.com/sports/tennis/Strategy-and-technique",
     },
     {
-      label: "USTA Tips and Instruction",
-      href: "https://www.usta.com/en/home/improve/tips-and-instruction.html",
+      label: "LTA tips and techniques",
+      href: "https://www.lta.org.uk/play/tennis-tips-and-techniques/",
     },
   ],
   footwork: [
     {
-      label: "LTA footwork tips",
-      href: "https://www.lta.org.uk/play/tennis-tips-and-techniques/improve-your-tennis-footwork-on-court-with-these-simple-tips/",
+      label: "USTA tips and instruction",
+      href: "https://www.usta.com/en/home/improve/tips-and-instruction.html",
+    },
+    {
+      label: "Tennis Canada shot playbook",
+      href: "https://www.tenniscanada.com/play/tennis-101/tennis-shot-playbook",
     },
   ],
   practice: [
     {
-      label: "LTA solo practice drills",
-      href: "https://www.lta.org.uk/advantage-home/content/how-to-train-and-practice-tennis-skills-by-yourself/",
+      label: "USTA tips and instruction",
+      href: "https://www.usta.com/en/home/improve/tips-and-instruction.html",
     },
     {
-      label: "ITF starter-player approach",
-      href: "https://www.itftennis.com/en/growing-the-game/itf-tennis-play-and-stay/",
+      label: "Tennis Canada shot playbook",
+      href: "https://www.tenniscanada.com/play/tennis-101/tennis-shot-playbook",
     },
   ],
 } as const;
