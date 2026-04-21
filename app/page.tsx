@@ -2,68 +2,6 @@ import { CoachPanel, PracticeTools, QuizSection } from "./components";
 import { diagramAssets, strokeCards, videoLessons } from "./data";
 import Image from "next/image";
 
-const sources = {
-  start: [
-    {
-      label: "Britannica tennis rules",
-      href: "https://www.britannica.com/sports/tennis/Principles-of-play",
-    },
-    {
-      label: "Tennis Canada shot playbook",
-      href: "https://www.tenniscanada.com/play/tennis-101/tennis-shot-playbook",
-    },
-  ],
-  strokes: [
-    {
-      label: "When Would You Use A Forehand In Tennis",
-      href: "https://www.tenniscanada.com/play/tennis-101/tennis-shot-playbook",
-    },
-    {
-      label: "How to Hit a Backhand in Tennis | USTA",
-      href: "https://www.usta.com/en/home/improve/tips-and-instruction/national/learning-the-basics--backhand.html",
-    },
-    {
-      label: "Tennis Serve Technique | My Tennis Expert",
-      href: "https://mytennisexpert.com/tennis-serve-technique/",
-    },
-    {
-      label: "What is a Volley in Tennis?",
-      href: "https://www.usta.com/en/home/improve/tips-and-instruction/national/learning-the-basics--volleys.html#tab=tournaments",
-    },
-  ],
-  footwork: [
-    {
-      label: "Mouratoglou footwork article",
-      href: "https://www.mouratoglou.com/en/conseils-coaching/coaching-corner/tennis-technique/tennis-footwork-techniques-to-improve-your-footwork/",
-    },
-  ],
-  practice: [
-    {
-      label: "Practice plan content",
-      href: "https://baseline-basics.vercel.app/#plan",
-    },
-  ],
-} as const;
-
-function SourceStrip({
-  items,
-  label = "Sources",
-}: {
-  items: readonly { label: string; href: string }[];
-  label?: string;
-}) {
-  return (
-    <aside className="source-strip" aria-label={label}>
-      <span>{label}</span>
-      {items.map((item) => (
-        <a href={item.href} key={item.href} rel="noreferrer" target="_blank">
-          {item.label}
-        </a>
-      ))}
-    </aside>
-  );
-}
-
 export default function Home() {
   return (
     <div className="site-shell">
@@ -182,8 +120,6 @@ export default function Home() {
           </article>
         </section>
 
-        <SourceStrip items={sources.start} label="Beginner guidance sources" />
-
         <section className="section-header" id="strokes">
           <p className="eyebrow">Core Strokes</p>
           <h2>Build the four shots most beginners meet first.</h2>
@@ -210,8 +146,6 @@ export default function Home() {
             </article>
           ))}
         </section>
-
-        <SourceStrip items={sources.strokes} label="Stroke technique sources" />
 
         <section className="section-header" id="diagrams">
           <p className="eyebrow">Stroke References</p>
@@ -251,8 +185,6 @@ export default function Home() {
 
         <CoachPanel />
 
-        <SourceStrip items={sources.strokes} label="Coach mode sources" />
-
         <section className="section-header" id="videos">
           <p className="eyebrow">Demo Videos</p>
           <h2>See the movements before you try them.</h2>
@@ -277,8 +209,6 @@ export default function Home() {
             </article>
           ))}
         </section>
-
-        <SourceStrip items={sources.strokes} label="Demo lesson sources" />
 
         <section className="section-header" id="footwork">
           <p className="eyebrow">Movement</p>
@@ -320,8 +250,6 @@ export default function Home() {
           </article>
         </section>
 
-        <SourceStrip items={sources.footwork} label="Footwork source" />
-
         <section className="section-header" id="plan">
           <p className="eyebrow">Practice Plan</p>
           <h2>Build a 20-minute session based on what you need most.</h2>
@@ -330,8 +258,6 @@ export default function Home() {
 
         <PracticeTools />
 
-        <SourceStrip items={sources.practice} label="Practice-plan sources" />
-
         <section className="section-header" id="quiz">
           <p className="eyebrow">Quiz</p>
           <h2>Check whether the key beginner ideas are sticking.</h2>
@@ -339,8 +265,6 @@ export default function Home() {
         </section>
 
         <QuizSection />
-
-        <SourceStrip items={[...sources.start, ...sources.strokes, ...sources.footwork]} label="Quiz sources" />
 
         <section className="closing-banner">
           <div>
