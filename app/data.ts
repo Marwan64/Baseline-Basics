@@ -6,14 +6,15 @@ export const strokeCards = [
     name: "Forehand",
     strap: "Your most natural groundstroke",
     description:
-      "The forehand is usually the first shot players trust because it feels athletic and open.",
+      "Can be used broadly for defensive situations but can also be used to win a rally.",
     cues: [
-      "Turn early so the body starts the swing, not just the arm.",
-      "Use adjustment steps to create comfortable spacing.",
-      "Meet the ball slightly in front of the body.",
-      "Finish high to build shape and control.",
+      "Mainly used when the ball comes onto the dominant hand side of the player.",
+      "Essential skill to develop early in someone's tennis career.",
+      "Ball should be hit when it is a little in front of the player and in between their shoulder and knee height.",
+      "Can also be used to hit balls that are low to the ground and hard to keep in play.",
+      "Possible to put both topspin and backspin on the ball in order to make it harder for the opponent to return.",
     ],
-    mistake: "Swinging only with the arm and forgetting to rotate through contact.",
+    source: "Source: When Would You Use A Forehand In Tennis",
     accent: "sun",
   },
   {
@@ -21,14 +22,14 @@ export const strokeCards = [
     name: "Backhand",
     strap: "Compact and stable from both wings",
     description:
-      "The backhand rewards early preparation and usually feels best for beginners with two hands.",
+      "The ball should be hit when it is a little in front of the player and off a little to their non-dominant side.",
     cues: [
-      "Turn the shoulders before the ball gets on top of you.",
-      "Keep the hands connected if you use a two-handed backhand.",
-      "Step through the shot to help your timing.",
-      "Drive through first, then let the finish rise.",
+      "Important to control the face of the racquet in order to be sure that the ball will land in play after contact.",
+      "Can utilize a single handed or two handed grips, either works.",
+      "For two handed, the dominant hand goes on the bottom while the non-dominant is on top.",
+      "Both topspin and backspin can be put on the ball in a backhand.",
     ],
-    mistake: "Preparing too late and getting jammed instead of swinging freely.",
+    source: "Source: How to Hit a Backhand in Tennis | Tennis Backhand Tips | USTA.com",
     accent: "mint",
   },
   {
@@ -36,14 +37,17 @@ export const strokeCards = [
     name: "Serve",
     strap: "The only shot you fully control at the start",
     description:
-      "A beginner serve improves fastest when the toss and upward reach become repeatable.",
+      "Player hits the ball from behind the baseline into the opposite box diagonally.",
     cues: [
-      "Begin sideways with the front shoulder aiming at the box.",
-      "Place the toss slightly in front so you can move up to it.",
-      "Reach high instead of swinging around the ball.",
-      "Land forward to carry momentum into the court.",
+      "Best to use a continental grip when serving.",
+      "Place feet pointed to the near side post.",
+      "In a platform stance, the feet do not move during the serve and there are greater stability and balance.",
+      "In a pinpoint stance the backfoot glides forward during the serve. There are more momentum and power, though the stance is harder to control.",
+      "Toss the ball slightly in front of yourself when you toss it upward.",
+      "When going to hit the ball, jump forward at something resembling a 45 degree angle to the ground.",
+      "Follow through fully after you are finished with making contact.",
     ],
-    mistake: "Tossing too far behind the head and losing balance before contact.",
+    source: "Source: Tennis Serve Technique | 9-Step Guide to a Better Serve | My Tennis Expert",
     accent: "blue",
   },
   {
@@ -51,14 +55,12 @@ export const strokeCards = [
     name: "Volley",
     strap: "Short, calm control near the net",
     description:
-      "Volleys work best with a quiet racket face, simple footwork, and compact contact.",
+      "This is where the ball is hit by the player before it bounces off the ground.",
     cues: [
-      "Keep the racket head up in front of the chest.",
-      "Use a short punch instead of a big swing.",
-      "Step through the ball to guide it.",
-      "Stay balanced after contact so the next volley is available.",
+      "There are three different kinds of volleys, forehand, backhand, and overhead.",
+      "A forehand is used when the ball is on the dominant side, a backhand is used when the ball is on the players nondominant side, and the overhead is used when the ball is lobbed high by the other player.",
     ],
-    mistake: "Taking a full swing and losing control of the racket face.",
+    source: "Source: What is a Volley in Tennis? Unlock the Secret to Winning at the Net",
     accent: "coral",
   },
 ] as const;
@@ -69,9 +71,8 @@ export const lessonContent: Record<
     focus: string;
     summary: string;
     cues: string[];
-    checks: string[];
-    drill: string;
     warning: string;
+    source: string;
   }
 > = {
   forehand: {
@@ -79,112 +80,91 @@ export const lessonContent: Record<
     summary:
       "Use the forehand to learn rhythm, spacing, and smooth rotation through the ball.",
     cues: [
-      "Turn your shoulders as soon as you recognize the ball.",
-      "Use small adjustment steps so contact happens comfortably in front.",
-      "Finish high and balanced instead of trying to slap the ball flat.",
+      "Try to grip the racket loosely and ensure the racket face is parallel to the ground when starting the swing.",
+      "Ensure contact point is to the dominant side of your body and slightly in front. It is helpful to be completely turned to the side of your body you are making contact on.",
+      "Swing slow to moderately and watch the ball as it makes contact on your racket. Follow through with your entire body.",
     ],
-    checks: [
-      "Did I meet the ball in front of my body?",
-      "Did my chest rotate through the shot?",
-      "Could I hold my finish without stumbling?",
-    ],
-    drill: "Shadow 8 slow forehands, then rally gently crosscourt or against a wall.",
     warning:
-      "If balls are spraying long, you are likely swinging too flat or contacting too late.",
+      "If balls are traveling too far and landing out with little to no arc shape over the net, you are likely not brushing up enough on the ball and should try to start your swing lower and end the swing over your shoulder.",
+    source: "Source used: USTA Tennis 101 Forehand",
   },
   backhand: {
-    focus: "Early preparation",
+    focus: "Backhand",
     summary:
-      "The backhand gets easier when the shoulder turn happens early and the swing stays compact.",
+      "The backhand is an important stroke for controlling the ball on your nondominant side and making contact comfortably in front of your body.",
     cues: [
-      "Turn sideways before the ball reaches you.",
-      "Keep both hands working together if you use a two-handed backhand.",
-      "Step through the shot so the swing feels connected to your body.",
+      "Grip the racket with two hands, ensuring the face makes solid contact with the ball.",
+      "Make contact a comfortable distance from your body on your nondominent side and slightly out in front.",
+      "Step through the shot, while watching the ball hit the racket.",
     ],
-    checks: [
-      "Did I prepare before the bounce?",
-      "Did I drive through contact instead of chopping down?",
-      "Was my finish smooth instead of rushed?",
-    ],
-    drill:
-      "Practice shoulder turn plus step-in without the ball, then rally backhands at half pace.",
     warning:
-      "If the ball keeps jamming you, your setup is late rather than your swing being weak.",
+      "If the ball is not hitting your racket square, experiment with different grips until one works. Any grip is fine as long as it is comfortable and works for you.",
+    source: "Source used: USTA Tennis 101 Backhand",
   },
   serve: {
-    focus: "Rhythm and toss",
+    focus: "Serve",
     summary:
-      "A simple serve starts with a repeatable toss and a calm upward reach.",
+      "Point your body the direction you want the serve to go and use your whole body to create power and control.",
     cues: [
-      "Start sideways with your front shoulder aiming toward the box.",
-      "Place the toss slightly in front so you can move up to it.",
-      "Reach to full extension instead of swinging only with the arm.",
+      "Point your body the direction you want the serve to go.",
+      "Toss the ball high up slightly in front of your body, you should not feel like you are having to reach forward or fall back to hit it.",
+      "Twist your body and follow through onto the court, power comes from your body more than your swing.",
     ],
-    checks: [
-      "Could I catch my toss in the same spot several times?",
-      "Did I move upward to the ball rather than leaning back?",
-      "Did I finish inside the court with balance?",
-    ],
-    drill: "Do 10 toss-and-catch reps before hitting easy half-speed serves.",
     warning:
-      "If contact feels rushed, fix the toss first. Most beginner serve problems start there.",
+      "Most issues for beginners arise with the toss. Focus on achieving a consistent toss that is predictable for you.",
+    source: "Source: https://tennispredict.com/tennis-serve/",
   },
   volley: {
-    focus: "Compact net control",
+    focus: "Volley",
     summary:
-      "Volleys are about posture, racket position, and short confident contact near the net.",
+      "Volleys are about control, contact position, and learning to step through the ball without swatting at it.",
     cues: [
-      "Keep the racket head up in front of your chest.",
-      "Use a short push instead of a full backswing.",
-      "Step forward through the volley to guide the ball.",
+      "Contact the ball to one side of your body rather than right in front of you.",
+      "Focus on holding the racket out and stepping through the volley rather than swinging or swatting at it.",
+      "Hold the racket firmly and freeze momentum when contact occurs.",
     ],
-    checks: [
-      "Were my hands out in front before the ball arrived?",
-      "Did I keep the racket face steady at contact?",
-      "Did I move through the shot instead of falling away?",
-    ],
-    drill:
-      "Shadow forehand and backhand volleys, then practice soft partner feeds near the service line.",
     warning:
-      "If volleys are popping upward, the racket face is probably opening too much.",
+      "If your volleys tend to lack power or are consistently not making solid contact, your grip may not be firm enough to control the ball.",
+    source:
+      "Source: https://www.usta.com/en/home/improve/tips-and-instruction/national/learning-the-basics--volleys.html#tab=tournaments",
   },
 };
 
 export const practicePlans = {
   contact: {
-    title: "Clean contact session",
+    title: "Clean contact",
     steps: [
-      "3 minutes: shadow swings with slow balanced finishes.",
-      "7 minutes: mini tennis in the service boxes to feel center contact.",
-      "6 minutes: wall rally or cooperative rally at medium speed.",
-      "4 minutes: finish with 10 calm forehands and 10 calm backhands.",
+      "3 minutes: shadow swings both forehand and backhand with slow and controlled movement.",
+      "7 minutes: mini tennis in the service boxes and be intentional about hitting the center of the racket.",
+      "6 minutes: go back to the baseline and cooperatively rally at medium speed.",
+      "4 minutes: finish by trying to hit 10 forehands and 10 backhands in a row.",
     ],
   },
   timing: {
-    title: "Timing and spacing session",
+    title: "Timing and Spacing",
     steps: [
-      "4 minutes: split-step and adjustment-step footwork without hitting.",
-      "6 minutes: partner feeds or self-drops with focus on spacing.",
-      "6 minutes: rally at half speed and recover after every shot.",
+      "4 minutes: split-step and jumping X exercises.",
+      "6 minutes: have someone feed you balls or self-drop them and focus on spacing from the ball.",
+      "6 minutes: rally cooperatively and focus on recovering after every shot.",
       "4 minutes: repeat your hardest stroke with slower preparation.",
     ],
   },
   serve: {
-    title: "Serve consistency session",
+    title: "Serve Session",
     steps: [
+      "3 minutes: shadow serve motions with a full upward reach.",
       "5 minutes: toss-and-catch until the release feels predictable.",
-      "5 minutes: shadow serve motions with a full upward reach.",
-      "6 minutes: easy serves at 60 percent pace into one target box.",
-      "4 minutes: finish with second-serve rhythm instead of power.",
+      "7 minutes: easy serves at 50 percent pace into one target box.",
+      "5 minutes: finish with putting more power into your swing by bending your knees and swinging faster.",
     ],
   },
   net: {
-    title: "Net confidence session",
+    title: "Volley session",
     steps: [
-      "4 minutes: ready-position and split-step rehearsal at the net.",
-      "6 minutes: shadow forehand and backhand volley punches.",
-      "6 minutes: gentle partner feeds with one controlled step forward.",
-      "4 minutes: combine approach shot plus first volley if possible.",
+      "6 minutes: shadow forehand and backhand volley punches as well as overhead swing path.",
+      "6 minutes: gentle feeds from partner with one controlled step forward for volleys.",
+      "4 minutes: easy lob feeds from partner while focusing on making clean contact.",
+      "4 minutes: combine approach shot plus play the point out at the net.",
     ],
   },
 } as const;

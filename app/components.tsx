@@ -41,18 +41,10 @@ export function CoachPanel() {
 
         <div className="lesson-grid">
           <div className="lesson-block">
-            <h4>3 Key Cues</h4>
+            <h4>3 Key Features</h4>
             <ul className="bullet-list">
               {lesson.cues.map((cue) => (
                 <li key={cue}>{cue}</li>
-              ))}
-            </ul>
-          </div>
-          <div className="lesson-block">
-            <h4>Self-Check</h4>
-            <ul className="bullet-list">
-              {lesson.checks.map((check) => (
-                <li key={check}>{check}</li>
               ))}
             </ul>
           </div>
@@ -60,12 +52,12 @@ export function CoachPanel() {
 
         <div className="lesson-footer">
           <div>
-            <p className="mini-label">Best first drill</p>
-            <p className="mini-note">{lesson.drill}</p>
-          </div>
-          <div>
             <p className="mini-label">Watch for this</p>
             <p className="mini-note">{lesson.warning}</p>
+          </div>
+          <div>
+            <p className="mini-label">Source</p>
+            <p className="mini-note">{lesson.source}</p>
           </div>
         </div>
       </article>

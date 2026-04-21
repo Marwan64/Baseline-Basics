@@ -15,36 +15,32 @@ const sources = {
   ],
   strokes: [
     {
-      label: "Tennis Canada shot playbook",
+      label: "When Would You Use A Forehand In Tennis",
       href: "https://www.tenniscanada.com/play/tennis-101/tennis-shot-playbook",
     },
     {
-      label: "Britannica tennis technique",
-      href: "https://www.britannica.com/sports/tennis/Strategy-and-technique",
+      label: "How to Hit a Backhand in Tennis | USTA",
+      href: "https://www.usta.com/en/home/improve/tips-and-instruction/national/learning-the-basics--backhand.html",
     },
     {
-      label: "LTA tips and techniques",
-      href: "https://www.lta.org.uk/play/tennis-tips-and-techniques/",
+      label: "Tennis Serve Technique | My Tennis Expert",
+      href: "https://mytennisexpert.com/tennis-serve-technique/",
+    },
+    {
+      label: "What is a Volley in Tennis?",
+      href: "https://www.usta.com/en/home/improve/tips-and-instruction/national/learning-the-basics--volleys.html#tab=tournaments",
     },
   ],
   footwork: [
     {
-      label: "USTA tips and instruction",
-      href: "https://www.usta.com/en/home/improve/tips-and-instruction.html",
-    },
-    {
-      label: "Tennis Canada shot playbook",
-      href: "https://www.tenniscanada.com/play/tennis-101/tennis-shot-playbook",
+      label: "Mouratoglou footwork article",
+      href: "https://www.mouratoglou.com/en/conseils-coaching/coaching-corner/tennis-technique/tennis-footwork-techniques-to-improve-your-footwork/",
     },
   ],
   practice: [
     {
-      label: "USTA tips and instruction",
-      href: "https://www.usta.com/en/home/improve/tips-and-instruction.html",
-    },
-    {
-      label: "Tennis Canada shot playbook",
-      href: "https://www.tenniscanada.com/play/tennis-101/tennis-shot-playbook",
+      label: "Practice plan content",
+      href: "https://baseline-basics.vercel.app/#plan",
     },
   ],
 } as const;
@@ -209,7 +205,7 @@ export default function Home() {
                 ))}
               </ul>
               <p className="mistake">
-                <strong>Common mistake:</strong> {stroke.mistake}
+                <strong>{stroke.source}</strong>
               </p>
             </article>
           ))}
@@ -287,37 +283,40 @@ export default function Home() {
         <section className="section-header" id="footwork">
           <p className="eyebrow">Movement</p>
           <h2>Good footwork makes every stroke easier.</h2>
-          <p>If your feet arrive late or off balance, even a good swing will feel hard to trust.</p>
+          <p>Footwork in tennis is how you move and position your body to hit the ball effectively.</p>
         </section>
 
         <section className="footwork-layout">
           <article className="panel panel-large">
-            <h3>Footwork basics</h3>
-            <div className="steps">
-              <div>
-                <span>1</span>
-                <h4>Split step</h4>
-                <p>Do a small hop as your opponent hits so your body is ready to move in any direction.</p>
-              </div>
-              <div>
-                <span>2</span>
-                <h4>Small adjustment steps</h4>
-                <p>Use little steps near the ball to find the right spacing instead of reaching.</p>
-              </div>
-              <div>
-                <span>3</span>
-                <h4>Recover after the shot</h4>
-                <p>Get back to a neutral position so you are ready for the next ball.</p>
-              </div>
-            </div>
+            <h3>Footwork in tennis</h3>
+            <p>
+              Footwork in tennis is how you move and position your body to hit the ball effectively, and it is one
+              of the most important skills for beginners to develop. Good movement helps you stay balanced, reach
+              the ball on time, and play more controlled and consistent shots.
+            </p>
+            <p>
+              Some of the key steps include the ready or waiting position (split step), where you stay on your toes
+              with knees slightly bent so you can react quickly. Then come small adjustment steps, which help you
+              fine-tune your position before hitting the ball instead of taking big, rushed strides.
+            </p>
+            <p>
+              Finally, weight transfer is important when striking the ball, as shifting your weight forward gives
+              you better power and control and helps you recover faster for the next shot.
+            </p>
           </article>
 
           <article className="panel">
-            <h3>Easy reminder</h3>
-            <p className="quote">Move first. Swing second.</p>
-            <p className="stat-note">
-              A lot of beginners do the opposite and then wonder why they feel jammed on every ball.
-            </p>
+            <h3>Exercises and tips</h3>
+            <ul className="bullet-list">
+              <li>Exercises to improve tennis footwork include shadow tennis, where you practice movements without a ball to build coordination and balance.</li>
+              <li>Speed ladder drills improve quickness, agility, and reaction time.</li>
+              <li>Chasing side steps help you move efficiently across the court while staying balanced.</li>
+              <li>Stay low to maintain balance and always be on your toes so you are ready to move.</li>
+              <li>Recover quickly to the center after each shot to prepare for the next one.</li>
+              <li>Learning to anticipate your opponent&apos;s shots also helps you move earlier and more efficiently.</li>
+              <li>Some common mistakes beginners make in footwork include a lack of anticipation, which leads to late reactions and poor positioning.</li>
+              <li>Others tend to hop around too much instead of using small, controlled steps, which wastes energy and makes movement less efficient.</li>
+            </ul>
           </article>
         </section>
 
