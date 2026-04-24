@@ -23,7 +23,7 @@ html {
 
 body {
   margin: 0;
-  font-family: var(--font-sans), "Avenir Next", "Trebuchet MS", sans-serif;
+  font-family: var(--font-sans), sans-serif;
   color: var(--text);
   background:
     radial-gradient(circle at top right, rgba(124, 228, 191, 0.18), transparent 32%),
@@ -153,7 +153,7 @@ iframe {
 .closing-banner h2,
 .intro-grid h2 {
   margin: 0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif), serif;
   font-weight: 400;
   line-height: 0.94;
   letter-spacing: -0.03em;
@@ -624,7 +624,7 @@ iframe {
 
 .quote {
   margin: 12px 0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif), serif;
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1;
   color: var(--text);
