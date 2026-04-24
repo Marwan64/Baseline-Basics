@@ -341,10 +341,13 @@ iframe {
 .practice-label,
 .quiz-step {
   margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-  font-size: 0.75rem;
-  color: rgba(244, 239, 226, 0.5);
+  font-family: var(--font-serif), serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+  color: var(--text);
+  text-transform: none;
 }
 
 .stat-value {
@@ -352,6 +355,8 @@ iframe {
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 0.98;
   font-weight: 700;
+  font-family: var(--font-serif), serif;
+  color: var(--text);
 }
 
 .stat-note,
